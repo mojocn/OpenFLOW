@@ -382,7 +382,7 @@ function App() {
     }, 5000); // Auto-save after 5 seconds of changes
     
     return () => clearTimeout(autoSaveTimer);
-  }, [currentModel, hasUnsavedChanges, currentDiagram, diagramName, icons]);
+  }, [currentModel, hasUnsavedChanges, currentDiagram, diagramName]);
   
   // Warn before closing if there are unsaved changes
   useEffect(() => {
